@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Navbar from './components/Navbar.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
@@ -26,9 +25,8 @@ function App() {
   }, [])
 
   return (
-    <div className="antialiased scroll-smooth theme-transition min-h-screen bg-white text-gray-900">
+    <div className="antialiased scroll-smooth theme-transition min-h-screen bg-white text-gray-900 font-poppins">
       <LoadingScreen />
-      <Navbar />
       <Hero />
       <About />
       <Skills />
@@ -40,3 +38,4 @@ function App() {
 }
 
 export default App
+

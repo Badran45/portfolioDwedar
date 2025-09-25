@@ -1,32 +1,22 @@
 import React from 'react'
-import { EmailIcon, WhatsAppIcon } from './Icons.jsx'
+import { EmailIcon, LinkedInIcon } from './Icons.jsx'
 
 export default function Contact() {
   return (
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h3 className="text-xl font-medium text-center text-gray-500">Get In Touch</h3>
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-indigo-600">Contact Me</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 justify-center">
-          {/* Primary button: Email */}
-          <a
-            href="mailto:dwedar207@gmail.com"
-            aria-label="Email Mahmoud"
-            className="group bg-indigo-600 text-white p-6 rounded-2xl shadow-lg inline-flex items-center justify-center space-x-2 py-3 px-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-indigo-700 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          >
-            <span className="transition-transform duration-300 group-hover:-translate-y-0.5">{<EmailIcon />}</span>
-            <span className="font-semibold">dwedar207@gmail.com</span>
+        <h3 className="text-xl font-medium text-center text-gray-500">Get in Touch</h3>
+        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-black">Contact Me</h2>
+        <div className="mx-auto w-full max-w-xl border-2 border-gray-300 rounded-2xl px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 overflow-hidden">
+          {/* Email */}
+          <a href="mailto:dwedar207@gmail.com" className="flex items-center gap-3 text-black hover:text-gray-700 hover:underline underline-offset-4 flex-1 min-w-0 justify-center">
+            <span className="text-2xl shrink-0"><EmailIcon /></span>
+            <span className="truncate">dwedar207@gmail.com</span>
           </a>
-          {/* Secondary button: WhatsApp */}
-          <a
-            href="https://wa.me/201129857538"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-            className="group bg-white text-indigo-600 border border-indigo-400 p-6 rounded-2xl shadow-lg inline-flex items-center justify-center space-x-2 py-3 px-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-indigo-50 hover:border-indigo-500 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          >
-            <span className="transition-transform duration-300 group-hover:translate-x-0.5">{<WhatsAppIcon />}</span>
-            <span className="font-semibold">+20 112 985 7538</span>
+          {/* LinkedIn */}
+          <a href="http://www.linkedin.com/in/mahmoud-dwedar-795122352" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-black hover:text-gray-700 flex-1 min-w-0 justify-center">
+            <span className="text-2xl shrink-0"><LinkedInIcon /></span>
+            <span className="font-medium truncate">LinkedIn</span>
           </a>
         </div>
       </div>
