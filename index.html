@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahmoud Dwedar | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Mahmoud Dwedar — Data Analyst. Projects, skills, and contact information." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Mahmoud Dwedar | Data Analyst Portfolio" />
+    <meta property="og:description" content="Explore projects, skills, and get in touch with Mahmoud Dwedar." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <script>
+      (function(){
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = (saved === 'light' || saved === 'dark') ? saved : (prefersDark ? 'dark' : 'light');
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
